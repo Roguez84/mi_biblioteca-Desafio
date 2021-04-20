@@ -3,7 +3,13 @@ class BooksController < ApplicationController
 
   # GET /books or /books.json
   def index
-    @books = Book.all
+    
+    #@books = Book.all ## Esto ya no se necesita porque se va a usar lo de ransack que esta abajo
+
+    #This is for using ransack
+    @q = Book.ransack(params[:q])
+    @books = @q.result(distinct: true)
+
   end
 
   # GET /books/1 or /books/1.json
