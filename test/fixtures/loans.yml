@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  loan_date: 2021-04-20 01:03:41
+  return_date: 2021-04-20 01:03:41
+  book: one
+
+two:
+  loan_date: 2021-04-20 01:03:41
+  return_date: 2021-04-20 01:03:41
+  book: two
